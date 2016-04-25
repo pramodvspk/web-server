@@ -13,7 +13,7 @@ app.get('/about', middleware.requireAuthentication , function(req, res){
 	res.send("Hello welcome to our about page!!!");
 });
 
-app.use(express.static(__dirname+"/Public"));
+app.use(express.static(__dirname+"/public"));
 
 
 app.listen(port, function(){
