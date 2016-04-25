@@ -10,7 +10,7 @@ app.use(middleware.logger)
 app.use(middleware.requireAuthentication);
 
 app.get('/about', middleware.requireAuthentication , function(req, res){
-	res.send("This is our about page!!!");
+	res.send("Hello welcome to our about page!!!");
 });
 
 app.use(express.static(__dirname+"/Public"));
